@@ -1,4 +1,3 @@
-package lab1;
 
 /** Class that determines whether or not a year is a leap year.
  *  @author YOUR NAME HERE
@@ -17,7 +16,7 @@ public class LeapYear {
     }
 
     private static boolean isLeapYear(int year) {
-        return false;
+        return year%400==0 || year%4==0&&year%100!=0;
     }
 
     /** Must be provided an integer as a command line argument ARGS. */
